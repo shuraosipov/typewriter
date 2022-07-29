@@ -5,24 +5,13 @@ import os
 ARTICLE_NAME="How to thrive in the Knowledge Economy?" 
 ARTICLE_NAME_WITH_UNDERSCORE = ARTICLE_NAME.replace(" ", "_").replace("?", "")
 
-# QUESTIONS = [
-#     "What is the knowledge economy?",
-#     "What is the purpose of the knowledge economy?",
-#     "How to thrive in the knowledge economy?",
-#     "How to make money in the knowledge economy?",
-#     "How to stay independent in the knowledge economy?",
-#     "How to make a good life in the knowledge economy?",
-#     "What are the backwards-looking issues in the knowledge economy?",
-#     "Summary: How to be successfull in the knowledge economy?",
-# ]
-
 QUESTIONS = {
     "What is the knowledge economy?":[],
-    # "How to thrive in the knowledge economy?":[],
-    # "How to make money in the knowledge economy?":[],
-    # "How to stay independent in the knowledge economy?":[],
-    # "How to make a good life in the knowledge economy?":[],
-    # "What are the backwards-looking issues in the knowledge economy?":[],
+    "How to thrive in the knowledge economy?":[],
+    "How to make money in the knowledge economy?":[],
+    "How to stay independent in the knowledge economy?":[],
+    "How to make a good life in the knowledge economy?":[],
+    "What are the backwards-looking issues in the knowledge economy?":[],
     "Summary: How to be successfull in the knowledge economy?":[],
 }
 
@@ -65,7 +54,11 @@ def create_markdown_file(questions, output_file_name):
             for answer in questions[question]:
                 file.write(answer + "\n")
             file.write("\n")
-    
+
+
+"""
+a function that submit the markdown file to grammatly api and get the grammatly analysis.
+"""
 
 
 
