@@ -1,5 +1,5 @@
 # The Typewriter AI - automated article creation.
-The Typewriter helps you convert your ideas into a readable article. It uses a pre-trained model to generate responses to your questions. It also helps you automate all phases of article creation - from the brainstorming phase to the final article, including proofreading, source validation, formatting, peer review, and publishing. Using this iteravite approach, your ideas and questions are converted into a coherent article.  
+The Typewriter helps you convert your ideas into a readable article. It uses a pre-trained model to generate responses to your questions. It also helps you automate all phases of article creation - from the brainstorming phase to the final article, including proofreading, source validation, formatting, peer review, and publishing. Using this iteravite approach, your ideas and questions are converted into a coherent article.
 
 
 # How it works?
@@ -16,6 +16,13 @@ It uses OpenAI GPT-3 to generate responses and assembles the article based on a 
 Required environment variable:
 ```
 export OPENAI_API_KEY=<your_api_key>
+```
+
+# Installation
+```
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
 ```
 
 # Run the app
