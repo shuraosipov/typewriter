@@ -4,8 +4,14 @@ from helper import MarkdownFile
 
 pass_canvas = click.make_pass_decorator(Canvas)
 
+def get_version():
+    with open("setup.py") as f:
+        for line in f:
+            if "version" in line:
+                return line.split("=")[1].strip()[1:-1]
+
 @click.group()
-@click.version_option("0.1.0")
+@click.version_option("get_version()")
 @click.pass_context
 def cli(ctx):
     ctx.obj = Canvas()
