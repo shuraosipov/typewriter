@@ -73,7 +73,7 @@ class Canvas:
 
     def add_answers(self, question, options):
         answers = []
-        print(f"Generating answer for question {question}", end =" ")
+        print(f"Generating an answer for a question {question}", end =" ")
         for i in range(options):
             answer = self.get_answser(question)
             answers.append(answer)
