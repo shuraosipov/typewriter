@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name="typewriter-cli",
-    version="0.1",
+    version="0.1.0",
     py_modules=["typewriter"],
     include_package_data=True,
     install_requires=["click", "openai"],
