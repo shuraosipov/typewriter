@@ -30,7 +30,7 @@ typewriter --version
 ```
 
 # Usage
-## Prepare list of questions
+## Prepare a list of questions
 Save your questions to a file. Each question should be on a separate line.
 Here is an example of a list of questions:
 ```
