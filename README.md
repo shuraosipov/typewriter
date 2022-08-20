@@ -30,6 +30,15 @@ typewriter --version
 ```
 
 # Usage
+## Prepare list of questions
+Save your questions to a file. Each question should be on a separate line.
+Here is an example of a list of questions:
+```
+$ cat data/input.txt
+
+What is the knowledge economy?
+How to thrive in the knowledge economy as a business?
+```
 
 ## Generating a canvas
 First you need to create a canvas for an article. Canvas is a blueprint in a json format. It contains title,introduction, summary and list of questions and answers. 
@@ -37,7 +46,11 @@ First you need to create a canvas for an article. Canvas is a blueprint in a jso
 You can create a canvas by running the following command:
 
 ```
-$ typewriter create-canvas --title "How to thrive in the Knowledge Economy?" --input_file "data/input.txt" --output_file "data/out.json" --options 3
+$ typewriter create-canvas \
+--title "How to thrive in the Knowledge Economy?" \
+--input_file "data/input.txt" \
+--output_file "data/out.json" \
+--options 3
 
 Output:
 Generating an answer for a question - What is the knowledge economy? . . . Done.
